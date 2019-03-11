@@ -1,0 +1,35 @@
+<html>
+<head>
+    <link href='app.css' rel='stylesheet'>
+</head>
+<div id="player-entry-container" class="opened">
+  <div id="player-entry">
+    <p>Enter player names</p>
+    <form onSubmit="startGame(); return false;">
+      <ul id="editable-player-list">
+        <li>
+          <input type="text" placeholder="Player 1"></input>
+        </li>
+        <li>
+          <input type="text" placeholder="Player 2"></input>
+        </li>
+      </ul>
+      <input type="submit" id="start-button" value="Start"></input>
+    </form>
+  </div>
+</div>
+<div id="main" class="hidden">
+  <div id="navigate-left" class="hidden">
+    <div class="left chevron"></div>
+  </div>
+  <div id="main-content">
+  </div>
+  <div id="navigate-right" class="visible">
+    <div class="right chevron"></div>
+  </div>
+</div>
+<div id="tooltip" class="hidden"><div>
+
+  <script src="app.js"></script>
+</body>
+</html>
